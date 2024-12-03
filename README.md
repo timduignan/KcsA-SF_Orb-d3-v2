@@ -5,3 +5,4 @@ data contains data files required to initialise the simualtions and to produce t
 
 scripts contains scripts to run the simulations, analyse the simulations and produce the plots.
 
+Paper is available at: https://arxiv.org/abs/2411.18931
