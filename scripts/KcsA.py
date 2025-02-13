@@ -138,7 +138,7 @@ def wrap_atoms(atoms=atoms):
 
 # Function to write XYZ files with custom comment line
 def write_xyz(atoms, step, F_magnitude, potassium_count, cell_size, timestep):
-    xyz_file = f"KcsA_{potassium_count}K_{F_magnitude:.1f}F.xyz"
+    xyz_file = f"KcsA_{potassium_count}K_{F_magnitude:.05f}F.xyz"
     
     time_fs = step * timestep / units.fs  # Convert time to femtoseconds
     comment = f"KcsA with {potassium_count} potassiums, force: {F_magnitude} eV/Å, cell size: {cell_size} Å, time: {time_fs:.2f} fs"
